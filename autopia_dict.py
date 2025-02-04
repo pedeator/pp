@@ -1,12 +1,11 @@
 # autopia_dict.py
 # A separate file to hold the full AVAILABLE_BRANDS_MODELS_AUTOPIA dictionary for Autopia.
-
-# (No imports required, unless you need something specific in this file.)
+# (No imports required.)
 
 AVAILABLE_BRANDS_MODELS_AUTOPIA = {
     # ------------- START OF FULL DICTIONARY -------------
     
-   "BMW": {
+    "BMW": {
         "1 E81/87 2004-2011":    "https://autopia.ge/en/products?mark=3&model=1064",
         "1 F20/F21 2012-2019":   "https://autopia.ge/en/products?mark=3&model=1066",
         "1 F40/F44 2020-2024":   "https://autopia.ge/en/products?mark=3&model=1100",
@@ -17,14 +16,14 @@ AVAILABLE_BRANDS_MODELS_AUTOPIA = {
         "3 E92 COUPE 2006-2012": "https://autopia.ge/en/products?mark=3&model=1077",
         "3 E90 2005-2009":       "https://autopia.ge/en/products?mark=3&model=1075",
         "3 E36 1990-1999":       "https://autopia.ge/en/products?mark=3&model=1111",
-        "3 E36 COUPE 1990-1999":"https://autopia.ge/en/products?mark=3&model=1115",
+        "3 E36 COUPE 1990-1999": "https://autopia.ge/en/products?mark=3&model=1115",
         "3 E46 1998-2002":       "https://autopia.ge/en/products?mark=3&model=1071",
         "3 E46 2002-2005":       "https://autopia.ge/en/products?mark=3&model=1072",
-        "3 E46 COUPE 2001-2003":"https://autopia.ge/en/products?mark=3&model=1073",
-        "3 E46 COUPE 2003-2005":"https://autopia.ge/en/products?mark=3&model=1074",
+        "3 E46 COUPE 2001-2003": "https://autopia.ge/en/products?mark=3&model=1073",
+        "3 E46 COUPE 2003-2005": "https://autopia.ge/en/products?mark=3&model=1074",
         "3 E90/91 2009-2012":    "https://autopia.ge/en/products?mark=3&model=1076",
         "4 F32 2013-2020":       "https://autopia.ge/en/products?mark=3&model=1083",
-        "4 F33 CABRIO 2013-2020":"https://autopia.ge/en/products?mark=3&model=1082",
+        "4 F33 CABRIO 2013-2020": "https://autopia.ge/en/products?mark=3&model=1082",
         "5 E34 1988-1995":       "https://autopia.ge/en/products?mark=3&model=1084",
         "5 E39 1995-2003":       "https://autopia.ge/en/products?mark=3&model=1085",
         "5 E60 2003-2007":       "https://autopia.ge/en/products?mark=3&model=1086",
@@ -38,8 +37,8 @@ AVAILABLE_BRANDS_MODELS_AUTOPIA = {
         "7 S E38 1994-2001":     "https://autopia.ge/en/products?mark=3&model=1093",
         "7 S E65/E66 2002-2008": "https://autopia.ge/en/products?mark=3&model=1091",
         "7 SR 2006-":           "https://autopia.ge/en/products?mark=3&model=328",
-        "7 S F01/F02 2008-2012":"https://autopia.ge/en/products?mark=3&model=1094",
-        "7 S G11/G12 2016-2018":"https://autopia.ge/en/products?mark=3&model=1095",
+        "7 S F01/F02 2008-2012": "https://autopia.ge/en/products?mark=3&model=1094",
+        "7 S G11/G12 2016-2018": "https://autopia.ge/en/products?mark=3&model=1095",
         "7 S G11/G12 2019-":    "https://autopia.ge/en/products?mark=3&model=1096",
         "X1 E84 2009-2013":     "https://autopia.ge/en/products?mark=3&model=327",
         "X1 E84 2013-2015":     "https://autopia.ge/en/products?mark=3&model=338",
@@ -87,7 +86,7 @@ AVAILABLE_BRANDS_MODELS_AUTOPIA = {
     "Cadillac": {
         "ESCALADE 2015-":   "https://autopia.ge/en/products?mark=78&model=1218",
         "ESCALADE 2021-":   "https://autopia.ge/en/products?mark=78&model=995",
-        "CTS 4D SEDAN 2014-":"https://autopia.ge/en/products?mark=78&model=965",
+        "CTS 4D SEDAN 2014-": "https://autopia.ge/en/products?mark=78&model=965",
         "SRX 2010-":        "https://autopia.ge/en/products?mark=78&model=1035",
         "ATS 2013-2019":    "https://autopia.ge/en/products?mark=78&model=1272",
         "CTS 2014-":        "https://autopia.ge/en/products?mark=78&model=1273",
@@ -302,7 +301,7 @@ AVAILABLE_BRANDS_MODELS_AUTOPIA = {
     },
 
     "Nissan": {
-        # massive block of Nissan expansions:
+        # Massive block of Nissan expansions:
         "ALMERA 2000-": "https://autopia.ge/en/products?mark=22&model=429",
         "FUGA/INFINITI 2005-": "https://autopia.ge/en/products?mark=22&model=364",
         "JUKE 2010-2015": "https://autopia.ge/en/products?mark=22&model=138",
@@ -411,7 +410,6 @@ AVAILABLE_BRANDS_MODELS_AUTOPIA = {
     },
 
     "Toyota": {
-        # The large Toyota block
         "PRIUS 2004-2009": "https://autopia.ge/en/products?mark=6&model=185",
         "PRIUS 2010-2012": "https://autopia.ge/en/products?mark=6&model=187",
         "PRIUS 2012-2015": "https://autopia.ge/en/products?mark=6&model=186",
@@ -517,7 +515,61 @@ AVAILABLE_BRANDS_MODELS_AUTOPIA = {
         "HILUX 1995-2004":      "https://autopia.ge/en/products?mark=6&model=1413",
         "VENZA 2009-2015":      "https://autopia.ge/en/products?mark=6&model=1414",
         "WISH 5D WAGON 2003-09":"https://autopia.ge/en/products?mark=6&model=1415"
+    },
+
+    "Volkswagen": {
+        "JETTA 2019-":         "https://autopia.ge/en/products?mark=7&model=470",
+        "JETTA 2015-":         "https://autopia.ge/en/products?mark=7&model=408",
+        "JETTA 2011-":         "https://autopia.ge/en/products?mark=7&model=22",
+        "JETTA/BORA 1998-":     "https://autopia.ge/en/products?mark=7&model=203",
+        "PASSAT CC 2012-":      "https://autopia.ge/en/products?mark=7&model=210",
+        "PASSAT CC 2008-2011":   "https://autopia.ge/en/products?mark=7&model=208",
+        "PASSAT 2019-":         "https://autopia.ge/en/products?mark=7&model=716",
+        "PASSAT 2015-":         "https://autopia.ge/en/products?mark=7&model=289",
+        "PASSAT 2012-":         "https://autopia.ge/en/products?mark=7&model=209",
+        "PASSAT 2005-2011":     "https://autopia.ge/en/products?mark=7&model=207",
+        "ARTEON 2017-":         "https://autopia.ge/en/products?mark=7&model=837",
+        "GOLF 7 2017-2019":     "https://autopia.ge/en/products?mark=7&model=1175",
+        "GOLF 7 2013-":         "https://autopia.ge/en/products?mark=7&model=55",
+        "GOLF 6 2008-2013":     "https://autopia.ge/en/products?mark=7&model=62",
+        "TIGUAN 2007-2011":     "https://autopia.ge/en/products?mark=7&model=56",
+        "TIGUAN 2011-2016":     "https://autopia.ge/en/products?mark=7&model=212",
+        "TIGUAN 2017-":         "https://autopia.ge/en/products?mark=7&model=838",
+        "TOUAREG 2002-2010":     "https://autopia.ge/en/products?mark=7&model=1141",
+        "TOUAREG 2011-":         "https://autopia.ge/en/products?mark=7&model=839",
+        "TOUAREG 2019-":         "https://autopia.ge/en/products?mark=7&model=853",
+        "ATLAS 2018-2020":       "https://autopia.ge/en/products?mark=7&model=922",
+        "ID3 2020-":             "https://autopia.ge/en/products?mark=7&model=1027",
+        "ID4 2021-":             "https://autopia.ge/en/products?mark=7&model=871",
+        "ID6 2021-":             "https://autopia.ge/en/products?mark=7&model=867",
+        "TAOS 2021-":            "https://autopia.ge/en/products?mark=7&model=1048",
+        "PASSAT 1996-2000":       "https://autopia.ge/en/products?mark=7&model=205",
+        "PASSAT 2001-2005":       "https://autopia.ge/en/products?mark=7&model=206",
+        "VENTO 1992-1998":        "https://autopia.ge/en/products?mark=7&model=276",
+        "GOLF 3 1993-1999":       "https://autopia.ge/en/products?mark=7&model=199",
+        "GOLF 4 1997-2003":       "https://autopia.ge/en/products?mark=7&model=200",
+        "GOLF 5 2003-2008":       "https://autopia.ge/en/products?mark=7&model=201",
+        "GOLF PLUS 2004-2009":    "https://autopia.ge/en/products?mark=7&model=337",
+        "LUPO 1998-":             "https://autopia.ge/en/products?mark=7&model=204",
+        "POLO 1994-1999":         "https://autopia.ge/en/products?mark=7&model=215",
+        "POLO 1999-2001":         "https://autopia.ge/en/products?mark=7&model=214",
+        "POLO 2001-2005":         "https://autopia.ge/en/products?mark=7&model=211",
+        "POLO 2005-2009":         "https://autopia.ge/en/products?mark=7&model=331",
+        "BEETLE 2012-":           "https://autopia.ge/en/products?mark=7&model=717",
+        "BEETLE 2017-":           "https://autopia.ge/en/products?mark=7&model=1315",
+        "CADDY 2004-2010":        "https://autopia.ge/en/products?mark=7&model=216",
+        "TOURAN 2004-2011":       "https://autopia.ge/en/products?mark=7&model=847",
+        "TRANSPORTER 2003-":      "https://autopia.ge/en/products?mark=7&model=549",
+        "TIGUAN 2016-2017":       "https://autopia.ge/en/products?mark=7&model=1330"
+    },
+
+    "Volvo": {
+        "POLESTAR 2020-": "https://autopia.ge/en/products?mark=30&model=822",
+        "XC90 2016-": "https://autopia.ge/en/products?mark=30&model=831"
+        # Additional Volvo models can be added here as new links become available.
     }
+    
+    # ------------- END OF FULL DICTIONARY -------------
 }
 
-# End of autopia_dict.py
+# End of autopia_dict.py.
