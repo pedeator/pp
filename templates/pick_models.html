@@ -1,0 +1,28 @@
+<!-- templates/pick_models.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pick Models</title>
+</head>
+<body>
+<h2>Pick Models for {{ brand }} ({{ chosen_source }})</h2>
+
+<form method="POST" action="/start_scrape_models">
+  <input type="hidden" name="chosen_source" value="{{ chosen_source }}">
+  <input type="hidden" name="brand" value="{{ brand }}">
+
+  {% for model_key, link_url in model_map.items() %}
+  <label>
+    <input type="checkbox" name="models" value="{{ model_key }}">
+    {{ model_key }}
+  </label><br>
+  {% endfor %}
+
+  <br>
+  <button type="submit">Scrape</button>
+</form>
+
+<br>
+<a href="/">Back Home</a>
+</body>
+</html>

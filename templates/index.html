@@ -1,0 +1,66 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MVP with Separate Templates</title>
+</head>
+<body>
+<h1>Deep Water MVP - Separated HTML in /templates</h1>
+
+<h2>Step 1) Choose Source</h2>
+<form method="POST" action="/pick_brand">
+  <select name="chosen_source" required>
+    <option value="" disabled selected>-- select source --</option>
+    <option value="otoparts">OtoParts</option>
+    <option value="autopia">Autopia</option>
+  </select>
+  <button type="submit">Next</button>
+</form>
+
+<hr>
+<h2>Step 2) Upload CSV for Fuzzy Match</h2>
+<p>(Optional) - Must have <b>InternalMarkModelYear</b> and <b>InternalDescription</b></p>
+<form method="POST" action="/upload_internal" enctype="multipart/form-data">
+  <label>File:
+    <input type="file" name="internal_csv" required accept=".csv">
+  </label>
+  <br><br>
+  <label>Fuzzy threshold (1-100):
+    <input type="number" name="threshold" value="70" min="1" max="100">
+  </label>
+  <br><br>
+  <button type="submit">Upload & Match</button>
+</form>
+
+<hr>
+<h3>Download Current Scraped Data</h3>
+<p><a href="/download_scraped">Download scraped_result.csv</a></p>
+
+<hr>
+<h3>Scraped Data ({{ scraped_df.shape[0] }} rows)</h3>
+{% if scraped_df.empty %}
+  <p>No data yet. Choose a source -> brand -> models to scrape.</p>
+{% else %}
+  <table border="1" cellpadding="4" cellspacing="0">
+    <tr>
+      <th>ProductCode</th>
+      <th>ProductName</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th>Availability</th>
+      <th>ImageURL</th>
+    </tr>
+    {% for idx, row in scraped_df.iterrows() %}
+    <tr>
+      <td>{{ row['ProductCode'] }}</td>
+      <td>{{ row['ProductName'] }}</td>
+      <td>{{ row['Price'] }}</td>
+      <td>{{ row['Category'] }}</td>
+      <td>{{ row['Availability'] }}</td>
+      <td>{{ row['ImageURL'] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endif %}
+</body>
+</html>

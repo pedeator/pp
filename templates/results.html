@@ -1,0 +1,34 @@
+<!-- templates/results.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fuzzy Merge Results</title>
+</head>
+<body>
+<h1>Fuzzy Merge Results</h1>
+<p><a href="/download_merged">Download merged_result.csv</a></p>
+<table border="1" cellpadding="4" cellspacing="0">
+  <tr>
+    <th>InternalMarkModelYear</th>
+    <th>InternalDescription</th>
+    <th>OtoPartsProductName</th>
+    <th>OtoPartsCategory</th>
+    <th>OtoPartsPrice</th>
+    <th>OtoPartsImageURL</th>
+  </tr>
+  {% for idx, row in merged_df.iterrows() %}
+  <tr>
+    <td>{{ row['InternalMarkModelYear'] }}</td>
+    <td>{{ row['InternalDescription'] }}</td>
+    <td>{{ row['OtoPartsProductName'] }}</td>
+    <td>{{ row['OtoPartsCategory'] }}</td>
+    <td>{{ row['OtoPartsPrice'] }}</td>
+    <td>{{ row['OtoPartsImageURL'] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<br>
+<a href="/">Back Home</a>
+</body>
+</html>

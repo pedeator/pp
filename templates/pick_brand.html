@@ -1,0 +1,25 @@
+<!-- templates/pick_brand.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pick Brand</title>
+</head>
+<body>
+<h2>Pick Brand for {{ chosen_source }}</h2>
+
+<form method="POST" action="/pick_models">
+  <input type="hidden" name="chosen_source" value="{{ chosen_source }}">
+  <label>Brand:</label>
+  <select name="brand" required>
+    <option value="" disabled selected>-- choose brand --</option>
+    {% for bname in brand_dict.keys() %}
+    <option value="{{ bname }}">{{ bname }}</option>
+    {% endfor %}
+  </select>
+  <button type="submit">Next</button>
+</form>
+
+<br>
+<a href="/">Back Home</a>
+</body>
+</html>
